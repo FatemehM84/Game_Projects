@@ -1,0 +1,1 @@
+namespace NeonHighway {public sealed class StationaryCarObstacle : Interactable {public override void Interact(GameManager game)=>game.Damage();}}

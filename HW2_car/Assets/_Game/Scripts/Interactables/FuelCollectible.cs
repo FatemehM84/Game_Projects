@@ -1,0 +1,2 @@
+using UnityEngine;
+namespace NeonHighway {public sealed class FuelCollectible : Interactable {protected override void Animate(float dt){transform.rotation=Quaternion.Euler(0,Mathf.Sin(age*2)*18,0);}public override void Interact(GameManager game)=>game.CollectFuel(transform.position);}}

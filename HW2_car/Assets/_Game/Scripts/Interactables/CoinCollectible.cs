@@ -1,0 +1,2 @@
+using UnityEngine;
+namespace NeonHighway {public sealed class CoinCollectible : Interactable {protected override void Animate(float dt){transform.Rotate(Vector3.up,110*dt,Space.World);}public override void Interact(GameManager game)=>game.CollectCoin(transform.position);}}

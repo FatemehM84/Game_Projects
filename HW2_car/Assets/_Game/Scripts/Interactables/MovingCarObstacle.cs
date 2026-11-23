@@ -1,0 +1,2 @@
+using UnityEngine;
+namespace NeonHighway {public sealed class MovingCarObstacle : Interactable {public float trafficSpeed=11;protected override void Animate(float dt){transform.position+=Vector3.forward*trafficSpeed*dt;}public override void Interact(GameManager game)=>game.Damage();}}
